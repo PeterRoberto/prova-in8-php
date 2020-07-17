@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 17-Jul-2020 às 18:55
+-- Tempo de geração: 17-Jul-2020 às 19:13
 -- Versão do servidor: 10.4.13-MariaDB
 -- versão do PHP: 7.2.32
 
@@ -41,12 +41,7 @@ CREATE TABLE `usuarios` (
 
 INSERT INTO `usuarios` (`id`, `nome`, `email`, `nascimento`, `telefone`) VALUES
 (1, 'Peter', 'peterrobertoweb@gmail.com', '25/02/1987', '984480454'),
-(13, 'asddasds', 'sddsfsdf', '32/44/2343', '0'),
-(14, 'wererwrwr', 'erwrewrewrewrwer', '43/55/3445', '0'),
-(15, 'tESTE', '343434', '44/42/4242', '0'),
-(16, 'ASDFDSFDS', 'WEWERRWERWER', '23/42/4324', '(44) 24232-'),
-(17, '3324324', '444234', '43/24/2343', '(32) 42343-'),
-(18, 'ASDFDSFDS', 'SDAFDSFDSFDS', '34/42/3442', '(42) 34234-2342');
+(19, 'Raul', 'teste@teste.com', '25/02/1987', '(34) 24234-3434');
 
 --
 -- Índices para tabelas despejadas
@@ -66,7 +61,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
