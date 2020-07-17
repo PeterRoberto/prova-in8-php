@@ -1,0 +1,179 @@
+body {
+    position: relative;
+}  
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+
+// Botão pra rolar pra cima
+.up-top {
+    background: #29abe2;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 19%;
+    right: 24%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.6s;
+    z-index: 9;
+    &:hover {
+        background: #011e48;
+        transition: 0.6s;
+    }
+    .arrow-left {
+        border: 1px solid #fff;
+        width: 26px;
+        transform: rotate(-47deg);
+        position: absolute;
+        left: 4px;
+        top: 17px;
+    }
+    .arrow-right {
+        border: 1px solid #fff;
+        width: 26px;
+        transform: rotate(47deg);
+        position: absolute;
+        right: 4px;
+        top: 17px;
+    }
+
+    .three {
+        left: 5px;
+        top: 28px;
+        width: 25px;
+    }
+    .four {
+        right: 5px;
+        top: 28px;
+        width: 23px;
+    }
+}
+
+
+// Padding padrão (Home)
+.padd-height {
+    padding: 87px 0;
+}
+ 
+
+
+  
+// Título das seções da Home (1º tipo)
+.title-sections {
+    text-transform: uppercase;
+    font-size: 49px;
+    color: #fff;
+    font-weight: 300;
+    font-family: "HelveticaNeue";
+}  
+
+// Botão 01
+.btn-first-type {
+    font-family: HelveticaNeue;
+    width: 384px;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #011e48;
+    color: #29abe2;
+    text-transform: uppercase;
+    font-size: 51px;
+    transition: 0.6s;
+    border: 1px solid #011e48; 
+    &:active, &:focus {
+        border: 0;
+        outline: 0;
+    }
+
+    &:hover {
+        border: 1px solid #fff; 
+        transition: 0.6s;
+        outline: 0;
+        color: #fff;
+    }
+}
+
+
+
+
+
+.two-section {
+    background-color: #29abe2;
+    border-top: 1px solid #fff;
+
+    // Formulário (Home)
+    .form-home {
+        margin-top: 67px;
+        .box-fields {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 27px;
+
+            .field {
+                margin-bottom: 0;
+                color: #fff;
+                position: relative;
+                font-family: HelveticaCond;
+                font-weight: 400;
+                b {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transition: 0.6s;
+                    font-family: RobotoR;
+                    font-weight: 400;
+                }
+            }  
+            .field.focus {
+                b {
+                    transition: 0.6s;
+                    top: -20px; 
+                    color: #011e48;
+                }
+            } 
+    
+            input {
+                width:  100%;
+                border: none;
+                background: transparent;
+                border-bottom: 1px solid #fff;
+                transition: 0.6s;
+                outline: 0;
+                color: #fff;
+                &:focus {
+                    transition: 0.6s;
+                    outline: 0;
+                    border-bottom: 1px solid #011e48;
+                }
+                &:hover {
+                    transition: 0.6s;
+                    outline: 0;
+                } 
+            }
+        }
+        
+        .box-btn {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+    
+.three-section {
+
+    .title-sections {
+        color: #29abe2; 
+    }
+}
+
+
+ 

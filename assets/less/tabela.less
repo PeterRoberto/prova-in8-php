@@ -1,0 +1,96 @@
+
+// TABELA
+.table-cadastro {
+    margin: 90px auto 0;
+
+    td {
+        border-bottom: 1px solid #29abe2;
+        border-right: 1px solid #29abe2;
+        text-align: center;
+        height: 60px;
+        color: #878787;
+        font-family: HelveticaCond;
+        font-size: 16px;
+        padding: 0 10px;
+        &:last-child {
+            border-right: none;
+        }
+    }
+
+    .name-box {
+        font-weight: bold; 
+        color: #012d50;
+        text-transform: uppercase;
+        font-family: RobotoR;
+        font-size: 16px;
+    }
+
+    .id-number {
+        font-family: RobotoL;
+    }
+}
+
+
+
+@media(max-width: 768px) {
+
+    /*-------------------------------------------------------------------------------------------------------------------------------*/
+    /* TABELA MOBILE */
+    /*-------------------------------------------------------------------------------------------------------------------------------*/
+    .tab-mobile {
+        margin: 28px auto 0;
+        li {
+            width: 25%;
+            text-align: center;
+            a {
+                padding: 6px 0; 
+                color: #999999;
+                background-color: #fff;
+                border: 1px solid #999999;
+                border-bottom-color: transparent;
+                cursor: default;
+                border-radius: 0;
+            }
+        }
+        .active {
+            a {
+                border: 2px solid #29abe2 !important;
+                border-bottom: none !important;
+                color: #29abe2 !important;
+            }
+        }
+    }
+    .tab-content-mobile {
+        border: 2px solid #29abe2;
+        padding: 10px;
+        min-height: 170px;
+
+        .tab-pane {
+            margin: 15px 0;
+            .info-fields {
+                display: flex;
+                align-items: center;
+                border-bottom: 2px solid #29abe2;
+                margin: 0 0 9px;
+                padding: 0 0 4px;
+                h4 {
+                    color: #011e48;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    font-size: 14px;
+                    margin-right: 18px;
+                    font-family: RobotoR;
+                    width: 47px;
+                }
+                span {
+                    align-items: center;
+                    color: #999999;
+                    font-family: HelveticaCond;
+                }
+            }
+        }
+    }
+    /*-------------------------------------------------------------------------------------------------------------------------------*/
+    /* TABELA MOBILE */
+    /*-------------------------------------------------------------------------------------------------------------------------------*/
+}
