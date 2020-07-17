@@ -4,7 +4,7 @@ include('connect.php');
 $nome = filter_input(INPUT_POST, 'nome', FILTER_DEFAULT);
 $email = filter_input(INPUT_POST, 'email', FILTER_DEFAULT);
 $nascimento = filter_input(INPUT_POST, 'nascimento', FILTER_DEFAULT);
-$telefone = filter_input(INPUT_POST, 'telefone', FILTER_VALIDATE_INT);
+$telefone = filter_input(INPUT_POST, 'telefone', FILTER_DEFAULT);
 
 
 try{
@@ -12,7 +12,7 @@ try{
     $connection->bindParam(":nome", $nome, PDO::PARAM_STR);
     $connection->bindParam(":email", $email, PDO::PARAM_STR);
     $connection->bindParam(":nascimento", $nascimento, PDO::PARAM_STR);
-    $connection->bindParam(":telefone", $telefone, PDO::PARAM_INT);
+    $connection->bindParam(":telefone", $telefone, PDO::PARAM_STR);
     $connection->execute();
 }
 catch(PDOException $ex){ 
